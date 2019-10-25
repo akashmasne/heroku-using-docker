@@ -4,5 +4,5 @@ COPY ./requirements.txt /deploy/
 COPY ./model.pkl /deploy/
 WORKDIR /deploy/
 RUN pip install -r requirements.txt
-EXPOSE 5000
+EXPOSE 8010
 ENTRYPOINT ["python", "app.py"]
